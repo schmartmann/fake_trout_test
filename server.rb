@@ -1,5 +1,7 @@
 require 'sinatra/activerecord'
 require './config/environment'
+require 'ddtrace'
+require 'ddtrace/contrib/sinatra/tracer'
 current_dir = Dir.pwd
 Dir["#{current_dir}/models/*.rb"].each { |file| require file }
 
