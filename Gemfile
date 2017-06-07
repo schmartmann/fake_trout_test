@@ -7,6 +7,8 @@ gem 'rake'
 gem 'thin' 
 gem 'require_all' 
 gem 'pg' 
+gem 'faker'
+gem "byebug"
 group :development do
   gem 'shotgun'
   gem 'pry'

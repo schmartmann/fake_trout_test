@@ -17,11 +17,14 @@ GEM
     arel (6.0.4)
     bond (0.5.1)
     builder (3.2.3)
+    byebug (9.0.6)
     coderay (1.1.1)
     daemons (1.2.4)
     ddtrace (0.7.2)
       msgpack
     eventmachine (1.2.3)
+    faker (1.7.3)
+      i18n (~> 0.5)
     i18n (0.8.4)
     json (1.8.6)
     method_source (0.8.2)
@@ -79,7 +82,9 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord (= 4.2.5)
+  byebug
   ddtrace
+  faker
   pg
   pry
   rake
