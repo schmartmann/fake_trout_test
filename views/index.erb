@@ -1,1 +1,14 @@
-"Hello World."
+<div>
+  <% if @trouts %>
+  <ul>
+    <% @trouts.each do |trout| %>
+      <li> <a href="<%=trout.id%>"><%= trout.name %></a></li> 
+    <% end %>
+  </ul>
+  <% end %>
+  <% if @trout %>
+    <p>Welcome to <%= @trout.name%>'s Trout Profile</p>
+    <p><%= @trout.name%> weighs this much: <%=@trout.weight%></p>
+    <p><%= @trout.name%> tastes like this: <%= @trout.taste%></p>
+  <% end %>
+</div>
