@@ -8,7 +8,6 @@ gem 'thin'
 gem 'require_all' 
 gem 'pg' 
 gem 'faker'
-gem 'dogstatsd-ruby'
 gem 'byebug'
 group :development do
   gem 'shotgun'

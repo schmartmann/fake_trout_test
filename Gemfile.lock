@@ -22,7 +22,6 @@ GEM
     daemons (1.2.4)
     ddtrace (0.7.2)
       msgpack
-    dogstatsd-ruby (3.0.0)
     eventmachine (1.2.3)
     faker (1.7.3)
       i18n (~> 0.5)
@@ -84,7 +83,6 @@ DEPENDENCIES
   activerecord (= 4.2.5)
   byebug
   ddtrace
-  dogstatsd-ruby
   faker
   pg
   pry
