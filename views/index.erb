@@ -5,6 +5,8 @@
       <li> <a href="<%=trout.id%>"><%= trout.name %></a></li> 
     <% end %>
   </ul>
+  <% else %>
+    <p>Add trouts!</p>
   <% end %>
   <% if @trout %>
     <p>Welcome to <%= @trout.name%>'s Trout Profile</p>
