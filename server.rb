@@ -8,13 +8,13 @@ require 'byebug'
 
 module Sinatra
   class Server < Sinatra::Base
-
-    statsd = Datadog::Statsd.new('localhost', 8125)
+    
+    statsd = Datadog::Statsd.new('datadog_test.pet-tinder.com', 5000)
 
     get "/" do
       @trouts = Trout.all
       erb :index
-      # statsd.increment('page.views')
+      statsd.gauge('users.online', 123, :sample_rate=>0.5)
     end
 
     get "/:id" do
