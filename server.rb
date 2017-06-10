@@ -8,7 +8,8 @@ Dir["#{current_dir}/models/*.rb"].each { |file| require file }
 class Sinatra::Application
   
   configure do
-    settings.datadog_tracer.configure default_service: "trout_app", debug:true, enabled:true
+    settings.datadog_tracer.configure default_service: "troutapp", debug:true, enabled:true,
+      trace_agent_port:8126 
   end
   
   configure :development do 
