@@ -5,7 +5,6 @@ require 'sinatra/activerecord'
 require './config/environment'
 current_dir = Dir.pwd
 Dir["#{current_dir}/models/*.rb"].each { |file| require file }
-require 'byebug'
 
 module Sinatra
   class Application < Sinatra::Base
